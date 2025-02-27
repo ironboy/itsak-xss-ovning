@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Protest Strike';
+}
+
+table {
+  /* remove the cell-spacing between cells*/
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+tr {
+  background-color: white;
+  color: black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+
+th,
+td {
+  padding: 5px 10px;
+}
+
+th.number,
+td.number {
+  text-align: right;
+}
+
+.select-holder {
+  margin-bottom: 12px;
+}
+
+form {
+  margin-bottom: 100px;
+  max-width: 500px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 340px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+label span {
+  display: inline-block;
+  width: 150px;
+}
+
+input[type="submit"] {
+  float: right;
+}
+
+.error {
+  color: rgb(211, 64, 64);
+  font-weight: bold;
+}
+
+.register,
+.login {
+  background-color: rgb(3, 68, 68);
+  position: fixed;
+  width: 540px;
+  left: calc(50vw - 220px);
+  top: 10vh;
+  padding: 20px;
+  height: 80vh;
+}
+
+.register-and-login-links {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.register-and-login-links a {
+  color: rgb(20, 166, 182);
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-hider {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.3;
+}
+
+a {
+  color: rgb(148, 195, 223);
+}
+
+.book {
+  color: #000;
+  background-color: #79a6d9;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.book:nth-child(odd) {
+  background-color: #9edbb3;
+}
