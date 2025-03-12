@@ -13,6 +13,16 @@ module.exports = function (app, runQuery, db) {
   });
 
   function editMyUserInfo(req, res) {
+
+    // To prevent changes to userRole remove userRole
+    // from the request body
+    delete req.body.userRole;
+    // if nohting to change then do nothing...
+    if (Object.keys(req.body).length === 0) {
+      res.json({ changes: 0 });
+      return;
+    }
+
     let userId = req.session.user?.id;
 
     let queryParameters = { ...req.body, id: userId };
